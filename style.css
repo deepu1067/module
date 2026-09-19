@@ -1,0 +1,68 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.bio{
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    background-color: rgb(255, 0, 0);
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    width: 60%;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+
+    text-transform: capitalize;
+
+    text-shadow: 4px 4px orange;
+    opacity: 50%;
+}
+
+a{
+    text-decoration: line-through;
+    background-color: blue;
+    color: white;
+}
+
+a:focus{
+    color: blue;
+    background-color: cyan;
+}
+
+button:active{
+    padding: 10px 100px;
+}
+
+button:disabled{
+    padding: 50px 100px;
+    color: red;
+    border-radius: 50px;
+    margin: 5px;
+
+    float: right;
+}
+
+section > ul{
+    background: linear-gradient(90deg, rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+}
+
+section:last-child > p:first-child:hover{
+    animation: run 600ms infinite;
+    color: red;
+}
+
+@keyframes run{
+    from{
+        background-color: black;
+    }
+    to{
+        background-color: white;
+    }
+}
